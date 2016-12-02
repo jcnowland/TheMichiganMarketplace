@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EB3FCB803ABF8172F1D64B5 /* Pods_TheMichiganMarketplace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DC3813861A435ED0084AD8 /* Pods_TheMichiganMarketplace.framework */; };
 		EE53EE221DF111CD00DC346F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE53EE211DF111CD00DC346F /* AppDelegate.swift */; };
 		EE53EE241DF111CD00DC346F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE53EE231DF111CD00DC346F /* ViewController.swift */; };
 		EE53EE271DF111CD00DC346F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE53EE251DF111CD00DC346F /* Main.storyboard */; };
 		EE53EE291DF111CD00DC346F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE53EE281DF111CD00DC346F /* Assets.xcassets */; };
 		EE53EE2C1DF111CD00DC346F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE53EE2A1DF111CD00DC346F /* LaunchScreen.storyboard */; };
+		EE53EE341DF114F400DC346F /* GoogleService-Info .plist in Resources */ = {isa = PBXBuildFile; fileRef = EE53EE331DF114F400DC346F /* GoogleService-Info .plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22DC3813861A435ED0084AD8 /* Pods_TheMichiganMarketplace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheMichiganMarketplace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63DA1D2E6D3BBE92612FA000 /* Pods-TheMichiganMarketplace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheMichiganMarketplace.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheMichiganMarketplace/Pods-TheMichiganMarketplace.debug.xcconfig"; sourceTree = "<group>"; };
+		9AB489AEAEDAC7A5A5DE2E43 /* Pods-TheMichiganMarketplace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheMichiganMarketplace.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheMichiganMarketplace/Pods-TheMichiganMarketplace.release.xcconfig"; sourceTree = "<group>"; };
 		EE53EE1E1DF111CD00DC346F /* TheMichiganMarketplace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheMichiganMarketplace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE53EE211DF111CD00DC346F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE53EE231DF111CD00DC346F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		EE53EE281DF111CD00DC346F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE53EE2B1DF111CD00DC346F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE53EE2D1DF111CD00DC346F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE53EE331DF114F400DC346F /* GoogleService-Info .plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info .plist"; path = "../../../Downloads/GoogleService-Info .plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EB3FCB803ABF8172F1D64B5 /* Pods_TheMichiganMarketplace.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14E2BF032398502A7D98BBD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22DC3813861A435ED0084AD8 /* Pods_TheMichiganMarketplace.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBC7811FF790C31C8A1E7B1E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				63DA1D2E6D3BBE92612FA000 /* Pods-TheMichiganMarketplace.debug.xcconfig */,
+				9AB489AEAEDAC7A5A5DE2E43 /* Pods-TheMichiganMarketplace.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EE53EE151DF111CD00DC346F = {
 			isa = PBXGroup;
 			children = (
 				EE53EE201DF111CD00DC346F /* TheMichiganMarketplace */,
 				EE53EE1F1DF111CD00DC346F /* Products */,
+				CBC7811FF790C31C8A1E7B1E /* Pods */,
+				14E2BF032398502A7D98BBD1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +86,7 @@
 				EE53EE281DF111CD00DC346F /* Assets.xcassets */,
 				EE53EE2A1DF111CD00DC346F /* LaunchScreen.storyboard */,
 				EE53EE2D1DF111CD00DC346F /* Info.plist */,
+				EE53EE331DF114F400DC346F /* GoogleService-Info .plist */,
 			);
 			path = TheMichiganMarketplace;
 			sourceTree = "<group>";
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE53EE301DF111CD00DC346F /* Build configuration list for PBXNativeTarget "TheMichiganMarketplace" */;
 			buildPhases = (
+				FA5720166AD77AE1C480BA30 /* [CP] Check Pods Manifest.lock */,
 				EE53EE1A1DF111CD00DC346F /* Sources */,
 				EE53EE1B1DF111CD00DC346F /* Frameworks */,
 				EE53EE1C1DF111CD00DC346F /* Resources */,
+				EA33BCD920F02624E184DBDE /* [CP] Embed Pods Frameworks */,
+				2891A7804F158EB162C33D04 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,10 +156,59 @@
 				EE53EE2C1DF111CD00DC346F /* LaunchScreen.storyboard in Resources */,
 				EE53EE291DF111CD00DC346F /* Assets.xcassets in Resources */,
 				EE53EE271DF111CD00DC346F /* Main.storyboard in Resources */,
+				EE53EE341DF114F400DC346F /* GoogleService-Info .plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2891A7804F158EB162C33D04 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheMichiganMarketplace/Pods-TheMichiganMarketplace-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA33BCD920F02624E184DBDE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheMichiganMarketplace/Pods-TheMichiganMarketplace-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA5720166AD77AE1C480BA30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EE53EE1A1DF111CD00DC346F /* Sources */ = {
@@ -256,6 +335,7 @@
 		};
 		EE53EE311DF111CD00DC346F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63DA1D2E6D3BBE92612FA000 /* Pods-TheMichiganMarketplace.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TheMichiganMarketplace/Info.plist;
@@ -268,6 +348,7 @@
 		};
 		EE53EE321DF111CD00DC346F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AB489AEAEDAC7A5A5DE2E43 /* Pods-TheMichiganMarketplace.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TheMichiganMarketplace/Info.plist;
